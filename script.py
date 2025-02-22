@@ -1,3 +1,4 @@
+
 from datetime import datetime
 from collections import defaultdict
 import os
@@ -109,7 +110,7 @@ def Transaction(folder_path):
     else:
         best_hour, best_avg_volume = None, 0
 
-    # Printing the results with the aid of a formtted string
+    # Printing the results with the aid of a formatted string
     print(f"Results for {folder_path}") # For outlining the individual results of each folder depending on the folder structure for each of them
     print(f"1. Highest sales volume in a day: {max_volume} products on {max_volume_day}")
     print(f"2. Highest sales value in a day: ${max_sales:.2f} on {max_sales_day}")
@@ -134,5 +135,5 @@ if __name__ == "__main__":
     ]
 
     for test_folder in test_case_folders:
-        print(f"\nAnalyzing folder: {test_folder}")
+        print(f"\Checking through folder: {test_folder}")
         Transaction(test_folder)
